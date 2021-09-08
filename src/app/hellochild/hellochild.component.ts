@@ -1,12 +1,12 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
-  selector: 'app-hellochild',
+  selector: 'hellochild',
   templateUrl: './hellochild.component.html',
   styleUrls: ['./hellochild.component.css']
 })
-export class HellochildComponent implements OnInit {
-  constructor() {}
+export class HellochildComponent {
+  @Input() users: any;
 
-  ngOnInit() {}
+  constructor() {}
 }
